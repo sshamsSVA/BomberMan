@@ -12,7 +12,7 @@ GameObject:
   m_Layer: 6
   m_Name: Castpoint
   m_TagString: Untagged
-  m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -24,8 +24,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621497809}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.31, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.349, y: 0.007, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 5387190416708305292}
   m_RootOrder: 0
@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 6775285603205928691}
   - component: {fileID: 7059241839739685736}
   - component: {fileID: -7640086759437330963}
+  - component: {fileID: 5020247537492317526}
   m_Layer: 6
   m_Name: bomb
   m_TagString: Untagged
@@ -59,7 +60,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2435080658456293950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.763, y: 0.259, z: 0}
+  m_LocalPosition: {x: -0.724, y: 0.259, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 2}
   m_Children:
   - {fileID: 621497810}
@@ -103,8 +104,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1718573385
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 5563595121940667174, guid: 5ba785379ba9942aaafd2a5fdab07392, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -166,7 +167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1107816b8c4644b5fb9f46bcdb06f8df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 0
   castPoint: {fileID: 621497810}
 --- !u!111 &-7640086759437330963
 Animation:
@@ -183,3 +183,17 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &5020247537492317526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2435080658456293950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6af6aba2b21240d198fc5ee7a16ff4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastRadius: 0
+  detectDistance: 0

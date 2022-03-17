@@ -47,6 +47,8 @@ public class PlayerController : MonoBehaviour
     // Method to instatiate the bomb prefab
     void SpawnBomb()
     {
-        Instantiate(bombPrefab, transform.position, Quaternion.identity);
+        // Instantiate(bombPrefab, transform.position, Quaternion.identity);
+
+        Instantiate(bombPrefab, new Vector3(Mathf.RoundToInt(transform.position.x), Mathf.RoundToInt(transform.position.y)), Quaternion.identity);
     }
 }
